@@ -25,7 +25,7 @@ public class Server {
                 while(true){
 
                     String messageFromClient = bufferedReader.readLine();
-                    System.out.println("Helen: "+messageFromClient);
+                    System.out.println("Helen: " + messageFromClient);
                     bufferedWriter.write("Message Received ");
                     bufferedWriter.newLine();
                     bufferedWriter.flush();
@@ -38,7 +38,7 @@ public class Server {
                 outputStreamWriter.close();
                 bufferedReader.close();
                 bufferedWriter.close();
-                
+
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
